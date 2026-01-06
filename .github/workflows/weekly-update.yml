@@ -20,9 +20,9 @@ jobs:
       - name: Update weekly status file
         run: |
           mkdir -p status
-          echo "Last weekly update run (UTC): $(date -u '+%Y-%m-%d %H:%M:%S')" > status/weekly-update.md
+          echo "Ultimo update de la semana (UTC): $(date -u '+%Y-%m-%d %H:%M:%S')" > status/weekly-update.md
 
-      - name: Commit changes (if any)
+      - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
